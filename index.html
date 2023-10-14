@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Container for all elements -->
+    <div class="container">
+        <!-- Header section with sidebar -->
+        <div class="header">
+            <div class="sidenav">
+                <!-- Navigation menu items -->
+                <ul>
+                    <li><a style="color: saddlebrown;" href="#home">Home</a></li>
+                    <li><a style="color: saddlebrown;" href="#product">Product</a></li>
+                    <li><a style="color: saddlebrown;" href="#services">Services</a></li>
+                    <li><a style="color: saddlebrown;" href="#aboutus">About us</a></li>
+                </ul>
+            </div>
+            <!-- Black bar above the cover -->
+            <div class="top-bar"></div>
+            <!-- Main title in the center -->
+            <h1 align="center" style="color: dark">Phineas and Ferb</h1>
+
+            <!-- Container for the slideshow -->
+            <div class="slideshow-container">
+                <!-- First slide -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="img/PF1.jpeg" style="width:100%">
+                </div>
+                
+                <!-- Second slide -->
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="img/PF2.jpeg" style="width:100%">
+                </div>
+                
+                <!-- Third slide -->
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="img/PF3.jpEg" style="width:100%">
+                </div>
+                
+                <!-- Fourth slide -->
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="img/PF4.jpEg" style="width:100%">
+                </div>
+
+                <!-- Fifth slide -->
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="img/PF5.jpEg" style="width:100%">
+                </div>
+            </div>
+            
+            <br>
+            
+            <!-- Dots for slideshow navigation -->
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
+            
+            <!-- Script to control the slideshow -->
+            <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {slideIndex = 1}    
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+            </script>
+
+            <!-- Home section -->
+            <div id="home" class="home"></div>
+            <div class="cover"></div>
+
+            <!-- Content section -->
+            <div class="content">
+                <h1>Phineas and Ferb</h1>
+                <h4><i>Written by Jihan</i></h4>
+                <p align="justify">Phineas and Ferb is an American animated television comedy and Disney Channel Original Series produced by Disney Television Animation for Disney Channel. The first episode premiered on August 17, 2007. The show is an Emmy Award-winning American animated television series about two young stepbrothers who turn their dreams into reality every day. Their teenage sister is jealous and tries to get them into trouble, but the evidence always disappears before their mom sees it. Meanwhile, an evil yet oddly eccentric scientist, Dr. Doofenshmirtz, is trying to wreak havoc in the Tri-State Area, and only the small pet of the two kids named Perry, also known as Agent P, can stop him.</p>
+            </div>
+
+            <!-- Product section -->
+            <div id="product" class="product">
+                <div class="content">
+                    <h1>Product</h1>
+                    <h4><i>Written by Jihan</i></h4>
+                    <p align="justify">Phineas and Ferb is an American animated television comedy and Disney Channel Original Series produced by Disney Television Animation for Disney Channel. The first episode premiered on August 17, 2007. The show is an Emmy Award-winning American animated television series about two young stepbrothers who turn their dreams into reality every day. Their teenage sister is jealous and tries to get them into trouble, but the evidence always disappears before their mom sees it. Meanwhile, an evil yet oddly eccentric scientist, Dr. Doofenshmirtz, is trying to wreak havoc in the Tri-State Area, and only the small pet of the two kids named Perry, also known as Agent P, can stop him.</p>
+                </div>
+            </div>
+
+            <!-- Services section -->
+            <div id="services" class="services">
+                <div class="content">
+                    <h1>Services</h1>
+                    <h4><i>Written by Jihan</i></h4>
+                    <p align="justify">Phineas and Ferb is an American animated television comedy and Disney Channel Original Series produced by Disney Television Animation for Disney Channel. The first episode premiered on August 17, 2007. The show is an Emmy Award-winning American animated television series about two young stepbrothers who turn their dreams into reality every day. Their teenage sister is jealous and tries to get them into trouble, but the evidence always disappears before their mom sees it. Meanwhile, an evil yet oddly eccentric scientist, Dr. Doofenshmirtz, is trying to wreak havoc in the Tri-State Area, and only the small pet of the two kids named Perry, also known as Agent P, can stop him.</p>
+                </div>
+            </div>
+
+            <!-- About Us section -->
+            <div id="aboutus" class="aboutus">
+                <div class="content">
+                    <h1>About Us</h1>
+                    <h4><i>Written by Jihan</i></h4>
+                    <p align="justify">Phineas and Ferb is an American animated television comedy and Disney Channel Original Series produced by Disney Television Animation for Disney Channel. The first episode premiered on August 17, 2007. The show is an Emmy Award-winning American animated television series about two young stepbrothers who turn their dreams into reality every day. Their teenage sister is jealous and tries to get them into trouble, but the evidence always disappears before their mom sees it. Meanwhile, an evil yet oddly eccentric scientist, Dr. Doofenshmirtz, is trying to wreak havoc in the Tri-State Area, and only the small pet of the two kids named Perry, also known as Agent P, can stop him.</p>
+                </div>
+            </div>
+
+            <!-- Footer section -->
+            <div class="footer">
+                <p><i>Copyright by Jihan</i></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

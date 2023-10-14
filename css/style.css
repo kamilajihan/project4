@@ -1,0 +1,146 @@
+body{
+  /* Set background color to silver */
+  background-color: silver;
+}
+
+/* Add style for a bar above the cover */
+.top-bar {
+  height: 10px;
+  background-color: black;
+}
+
+/* The sidebar menu */
+.sidenav {
+  /* Set full height and fixed width */
+  height: 100%; 
+  width: 160px; 
+  /* Set position on the left */
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  /* Disable horizontal scroll and add padding at the top */
+  background-color: black; 
+  overflow-x: hidden; 
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  color: black;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  display: block;
+  background-color: #f1f1f1;
+}
+
+/* Global styles */
+* {box-sizing: border-box;}
+
+/* Set font */
+body {font-family: Verdana, sans-serif;}
+
+/* Hide the slideshow img by default */
+.mySlides {display: none;}
+
+/* Align img vertically in middle */
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/5 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+/* Active dot */
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.0s;
+}
+
+/* Main container */
+.container {
+  width: 800px;
+  margin: auto;
+  background-color: silver;
+}
+
+/* Header styles */
+.header h1{
+  font-size: 30px;
+  margin-left: 20px; 
+}
+.header ul li{
+  display: inline-block;
+}
+.header li a{
+  font-size: 16px;
+  margin: auto;
+}
+
+content h1{
+  font-size: 20px;
+  margin-left: 20px;
+}
+.content h4{
+  margin-left: 20px;
+}
+.content p{
+  margin-left: 20px;
+  text-align: justify
+}
+
+/* Footer styles */
+.footer{
+    background-color: saddlebrown;
+    text-align: center;
+    margin-left:20px;
+    color: burlywood;
+    scroll-margin-top:20px;
+}
+.footer {font-size: 18px;
+}
+   
